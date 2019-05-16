@@ -1,0 +1,17 @@
+{
+  "name": "tectech-util",
+  "version": "1.0.0",
+  "description": "nuxt.js用Util関数ライブラリ",
+  "main": "Util.js",
+  "private":true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tec-tech/npm-UTIL.git"
+  },
+  "author": "tectech inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tec-tech/npm-UTIL/issues"
+  },
+  "homepage": "https://github.com/tec-tech/npm-UTIL#readme"
+}
