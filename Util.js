@@ -56,5 +56,19 @@ const Util = {
 		return target;
 	},
 
+	//===============================================
+	// ランダム文字列を生成
+	//===============================================
+	random: (size)=>{
+		if(!size) size = 8;
+		var c = "abcdefghijklmnopqrstuvwxyz0123456789";
+		var cl = c.length;
+		var r = "";
+		for(var i=0; i<size; i++){
+			r += c[Math.floor(Math.random()*cl)];
+		}
+		return r;
+	},
+
 }
 module.exports = Util;
