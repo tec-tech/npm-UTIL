@@ -1,6 +1,6 @@
 {
   "name": "tectech-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nuxt.js用Util関数ライブラリ",
   "main": "Util.js",
   "private":true,
