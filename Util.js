@@ -142,6 +142,15 @@ const Util = {
 		return JSON.parse(JSON.stringify(obj));
 	},
 
+	//==================================================
+	// ランダム文字列生成
+	//==================================================
+	random: function(len){
+		var S="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+		if(!len) len=8
+		return Array.from(Array(len)).map(()=>S[Math.floor(Math.random()*S.length)]).join('');
+	}
+	
 
 }
 module.exports = Util;
