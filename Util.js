@@ -135,5 +135,13 @@ const Util = {
 		open(url, target);
 	},
 
+	//===============================================
+	// オブジェクトコピー
+	//===============================================
+	objCopy: function(obj){
+		return JSON.parse(JSON.stringify(obj));
+	},
+
+
 }
 module.exports = Util;
