@@ -127,5 +127,13 @@ const Util = {
 		return new File([buffer.buffer], name, {type: img_type});
 	},
 
+	//===============================================
+	// ページ遷移
+	//===============================================
+	pageJump: function(url, target){
+		if(!target) target = "";
+		open(url, target);
+	},
+
 }
 module.exports = Util;
