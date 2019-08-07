@@ -133,6 +133,7 @@ const Util = {
 	pageJump: function(url, target){
 		if(!target) target = "";
 		open(url, target);
+		// open(url, '_SELF');
 	},
 
 	//===============================================
@@ -149,6 +150,15 @@ const Util = {
 		var S="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 		if(!len) len=8
 		return Array.from(Array(len)).map(()=>S[Math.floor(Math.random()*S.length)]).join('');
+	},
+
+	//==================================================
+	// URLエンコード（RFC-3986対応）
+	//==================================================
+	encodeURIComponent: function(str){
+		return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
+			return '%' + c.charCodeAt(0).toString(16);
+		});
 	}
 	
 
